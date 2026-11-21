@@ -14,29 +14,40 @@
   <header>
     <h1>✨Donuties✨</h1>
     <style>
-  @keyframes munculBerkilau {
+  @keyframes munculSekali {
     0% {
       opacity: 0;
-      text-shadow: none;
     }
-    45% {
+    100% {
       opacity: 1;
-      text-shadow:
-        0 0 12px #ffffff,
-        0 0 24px #ffe6ee,
-        0 0 40px #ff9ebb;
     }
-    75% {
-      opacity: 1;
+  }
+
+  @keyframes kilauTerus {
+    0%, 100% {
       text-shadow:
         0 0 6px #ffffff,
         0 0 12px #ffe6ee;
     }
-    100% {
-      opacity: 0;
-      text-shadow: none;
+    50% {
+      text-shadow:
+        0 0 14px #ffffff,
+        0 0 26px #ffe6ee,
+        0 0 42px #ff9ebb;
     }
   }
+
+  header h1 {
+    display: inline-block !important;
+    margin: 0 !important;
+    font-size: 40px !important;
+    color: #ffffff !important;
+    opacity: 1 !important;
+    animation:
+      munculSekali 1.4s ease-out 1 forwards,
+      kilauTerus 2.4s ease-in-out 1.4s infinite !important;
+  }
+    </style>
 
   header h1 {
     display: inline-block;
