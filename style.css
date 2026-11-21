@@ -175,6 +175,51 @@ footer {
   border: none;
   border-radius: 10px;
 }
+html {
+  scroll-behavior: smooth;
+}
+
+.maps-container iframe {
+  width: 100%;
+  max-width: 600px;
+  aspect-ratio: 4 / 3;
+  height: auto;
+  border: none;
+  border-radius: 10px;
+}
+
+button,
+.tombol-wa {
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+button:hover,
+.tombol-wa:hover {
+  transform: translateY(-2px);
+  opacity: 0.95;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(230, 40, 106, 0.2);
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 32px;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 4px 8px;
+  }
+
+  section {
+    padding: 18px;
+  }
+}
 
 #alamat {
   margin-top: 40px;
