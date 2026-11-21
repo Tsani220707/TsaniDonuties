@@ -188,20 +188,6 @@ footer {
   outline: none !important;
 }
 
-@keyframes gerakDonuties {
-  0%, 100% {
-    transform: translateY(0) scale(1);
-  }
-  50% {
-    transform: translateY(-10px) scale(1.03);
-  }
-}
-
-header h1 {
-  display: inline-block;
-  animation: gerakDonuties 1.8s ease-in-out infinite;
-}
-
 @keyframes kilauLewat {
   0% {
     background-position: -200% center;
