@@ -198,18 +198,21 @@ footer {
 }
 
 header h1 {
+  margin: 0;
+  font-size: 40px;
   display: inline-block;
   color: transparent;
   background-image: linear-gradient(
     110deg,
     #ffffff 0%,
-    #ffffff 38%,
-    #ffe4ec 50%,
-    #ffffff 62%,
+    #ffffff 35%,
+    #ffe6ee 50%,
+    #ffffff 65%,
     #ffffff 100%
   );
   background-size: 220% auto;
   -webkit-background-clip: text;
   background-clip: text;
-  animation: kilauLewat 3.2s linear infinite;
+  transform: none;
+  animation: kilauLewat 2.8s linear infinite;
 }
