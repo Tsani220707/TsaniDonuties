@@ -212,5 +212,5 @@ header h1 {
   margin: 0;
   font-size: 40px;
   color: #ffffff;
-  animation: munculBerkilau 3s ease-in-out infinite;
+  animation: munculBerkilau 3s ease-in-out 1 forwards;
 }
