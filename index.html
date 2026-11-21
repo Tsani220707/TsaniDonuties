@@ -4,78 +4,41 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Donuties - Donat manis, fluffy, dan yummy</title>
-  <!-- Menghubungkan huruf Poppins dan file CSS (pertemuan 4) -->
+  <!-- Menghubungkan huruf Poppins dan file CSS -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
 
   <!-- HEADER: nama usaha dan menu -->
-<style>
-  @keyframes munculSekali {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-
-  @keyframes kilauTerus {
-    0%, 100% {
-      text-shadow:
-        0 0 6px #ffffff,
-        0 0 12px #ffe6ee;
-    }
-    50% {
-      text-shadow:
-        0 0 14px #ffffff,
-        0 0 26px #ffe6ee,
-        0 0 42px #ff9ebb;
-    }
-  }
-
-  header h1 {
-    display: inline-block;
-    margin: 0;
-    font-size: 40px;
-    color: #ffffff;
-    animation:
-      munculSekali 1.4s ease-out 1 forwards,
-      kilauTerus 2.4s ease-in-out 1.4s infinite;
-  }
-</style>
-
-<header>
-  <h1>✨Donuties✨</h1>
-  <p><em>Donat manis, fluffy, dan yummy</em></p>
-  <nav>
-    <a href="#tentang">Tentang</a> |
-    <a href="#produk">Produk</a> |
-    <a href="#Video">Channel</a> |
-    <a href="#kontak">Kontak</a> |
-    <a href="#Maps">Maps</a>
-  </nav>
-</header>
+  <header>
+    <h1>✨Donuties✨</h1>
+    <p><em>Donat manis, fluffy, dan yummy</em></p>
+    <nav>
+      <a href="#tentang">Tentang</a> |
+      <a href="#produk">Produk</a> |
+      <a href="#Video">Channel</a> |
+      <a href="#kontak">Kontak</a> |
+      <a href="#Maps">Maps</a> 
+    </nav>
+  </header>
 
   <main>
 
     <!-- BAGIAN TENTANG -->
     <section id="tentang">
       <h2>Tentang Kami</h2>
-      <p>Donuties adalah produk donat yang mengutamakan rasa dan kualitas
-         <strong>Donuties</strong> sejak 2025.</p>
-         <div class="gambar">
-  <img src="image/donat pembuka.webp" alt="Produk Donat">
-</div>
-
+      <p>Donuties adalah produk donat yang mengutamakan rasa dan kualitas <strong>Donuties</strong> sejak 2025.</p>
+      
+      <div class="gambar">
+        <img src="image/donat pembuka.webp" alt="Produk Donat">
+      </div>
 
       <h3>Mengapa Memilih Kami?</h3>
       <ul>
-        <li> Memiliki cita rasa manis dan nikmat yang disukai berbagai kalangan</li>
-        <li> Tersedia berbagai pilihan topping dan rasa yang menarik</li>
-        <li> Menawarkan harga yang ramah di kantong</li>
+        <li>Memiliki cita rasa manis dan nikmat yang disukai berbagai kalangan</li>
+        <li>Tersedia berbagai pilihan topping dan rasa yang menarik</li>
+        <li>Menawarkan harga yang ramah di kantong</li>
       </ul>
 
       <h3>Cara Pemesanan</h3>
@@ -94,31 +57,31 @@
           <tr><th>Produk</th><th>Ukuran</th><th>Harga</th></tr>
         </thead>
         <tbody>
-          <tr><td>Donat Original</td><td>isi 9</td><td>Rp20.000</td></tr>
-          <tr><td>Donat Toping</td><td>isi 9</td><td>Rp24.000</td></tr>
-          <tr><td>Donat Glaze</td><td>isi 9</td><td>Rp26.000</td></tr>
+          <tr><td>Donat Original</td><td>Isi 9</td><td>Rp20.000</td></tr>
+          <tr><td>Donat Toping</td><td>Isi 9</td><td>Rp24.000</td></tr>
+          <tr><td>Donat Glaze</td><td>Isi 9</td><td>Rp26.000</td></tr>
         </tbody>
       </table>
       
-        <div class="gambar">
-         <img src="image/donat glaze 2.jpeg" alt="Our Donuties">
-        </div>
-        </section>
-      <!-- Tempat video YouTube: tempel kode iframe dari YouTube di sini -->
-       <section id="Video">
-        <h2>Channel youtube</h2>
-        <div class="video-youtube">
-   <iframe width="720" height="405" src="https://www.youtube.com/embed/0_kxAIetR7o?si=YUMjl1Aw4KDLxGBm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
-</section>
-    
+      <div class="gambar">
+        <img src="image/donat glaze 2.jpeg" alt="Our Donuties">
+      </div>
+    </section>
+
+    <!-- BAGIAN CHANNEL YOUTUBE -->
+    <section id="Video">
+      <h2>Channel Youtube</h2>
+      <div class="video-youtube">
+        <iframe src="https://www.youtube.com/embed/0_kxAIetR7o?si=YUMjl1Aw4KDLxGBm" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </section>
 
     <!-- BAGIAN KONTAK -->
     <section id="kontak">
       <h2>Hubungi Kami</h2>
       <p>Jl. Raya Baturraden No. 10<br>Banyumas, Jawa Tengah</p>
       <p>
-        <a class="tombol-wa" href="https://wa.me/6281915778984?text=Halo%20Donuties%20💓,%20saya%20mau%20pesan" target="_blank">Pesan via WhatsApp</a>
+        <a class="tombol-wa" href="https://wa.me/6281915778984?text=Halo%20Donuties,%20saya%20mau%20pesan" target="_blank">Pesan via WhatsApp</a>
       </p>
 
       <form action="#" method="post">
@@ -133,23 +96,20 @@
 
         <button type="submit">Kirim</button>
       </form>
-
-      <!-- Tempat peta: tempel kode iframe dari Google Maps di sini -->
-       <section id="Maps">
-        <h2>Alamat Donuties</h2>
-<div class="maps-container">
-    <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.6015614842786!2d109.22857767591216!3d-7.398462272847189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e655f072387fab9%3A0x269c1733d358d2b7!2sUniversitas%20Amikom%20Purwokerto%20-%20Gedung%20Utama!5e0!3m2!1sid!2sid!4v1793329682575!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"
-        width="600"
-        height="450"
-        style="border:0;"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
-</div>
     </section>
-</div>
+
+    <!-- BAGIAN MAPS -->
+    <section id="Maps">
+      <h2>Alamat Donuties</h2>
+      <div class="maps-container">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.6015614842786!2d109.22857767591216!3d-7.398462272847189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e655f072387fab9%3A0x269c1733d358d2b7!2sUniversitas%20Amikom%20Purwokerto%20-%20Gedung%20Utama!5e0!3m2!1sid!2sid!4v1793329682575!5m2!1sid!2sid" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </section>
 
   </main>
 
@@ -159,4 +119,4 @@
   </footer>
 
 </body>
-
+</html>
