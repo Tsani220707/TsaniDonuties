@@ -183,21 +183,6 @@ textarea:focus {
   box-shadow: 0 0 0 3px rgba(230, 40, 106, 0.2);
 }
 
-@media (max-width: 600px) {
-  header h1 {
-    font-size: 32px;
-  }
-
-  nav a {
-    display: inline-block;
-    margin: 4px 8px;
-  }
-
-  section {
-    padding: 18px;
-  }
-}
-
 #alamat {
   margin-top: 40px;
   border: none !important;
