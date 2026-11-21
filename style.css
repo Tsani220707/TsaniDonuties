@@ -1,6 +1,10 @@
 /* 1. Pengaturan umum */
-* { 
-  box-sizing: border-box; 
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -22,174 +26,10 @@ header {
   background-color: #e6286a;
   color: #FFFFFF;
   text-align: center;
-  padding: 32px 16px;
+  padding: 36px 16px;
 }
 
-nav { 
-  margin-top: 16px; 
-}
-
-nav a {
-  color: #FFFFFF;
-  text-decoration: none;
-  font-weight: 600;
-  margin: 0 12px;
-}
-
-nav a:hover { 
-  text-decoration: underline; 
-}
-
-.gambar {
-  text-align: center;
-}
-
-.gambar img {
-  width: 800px;
-  height: auto;
-}
-
-.video-youtube {
-  display: flex;
-  justify-content: center;
-  margin: 24px 0 32px;
-}
-
-.video-youtube iframe {
-  width: 100%;
-  max-width: 720px;
-  aspect-ratio: 16 / 9;
-  height: auto;
-  border: none;
-  border-radius: 12px;
-}
-
-/* 3. Isi halaman */
-main { 
-  max-width: 960px; 
-  margin: 0 auto; 
-  padding: 16px; 
-}
-
-section {
-  background-color: #f8d8dd;
-  border: none !important;
-  box-shadow: none !important;
-  outline: none !important;
-  border-radius: 12px;
-  padding: 24px;
-  margin: 24px 0;
-}
-
-h2 {
-  color: #e6286a;
-  border-bottom: 3px solid #f8d8dd;
-  padding-bottom: 8px;
-}
-
-/* Pengaturan garis bawah H2 tiap section */
-#tentang h2,
-#produk h2,
-#channel h2,
-#Video h2,
-#kontak h2,
-#maps h2,
-#Maps h2 {
-  border-bottom: 3px solid #e6286a;
-  padding-bottom: 8px;
-  display: block;
-  width: 100%;
-}
-
-img { 
-  max-width: 100%; 
-  height: auto; 
-  border-radius: 8px; 
-}
-
-/* 4. Tabel */
-table { 
-  width: 100%; 
-  border-collapse: collapse; 
-  margin-bottom: 24px; 
-}
-
-th, td { 
-  border: 1px solid #e6286a; 
-  padding: 10px; 
-  text-align: left; 
-}
-
-th { 
-  background-color: #e76a7f; 
-}
-
-/* 5. Form */
-input, select, textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #e6286a;
-  border-radius: 6px;
-  font-family: inherit;
-}
-
-button {
-  background-color: #e6286a;
-  color: #f8d8dd;
-  border: none;
-  border-radius: 6px;
-  padding: 12px 24px;
-  cursor: pointer;
-}
-
-/* 6. Tombol WhatsApp */
-.tombol-wa {
-  display: inline-block;
-  background-color: #e6286a;
-  color: #f8d8dd;
-  font-weight: 600;
-  text-decoration: none;
-  padding: 12px 20px;
-  border-radius: 30px;
-}
-
-/* 7. Footer & Maps */
-footer {
-  background-color: #e6286a;
-  color: #f8d8dd;
-  text-align: center;
-  padding: 16px;
-}
-
-.maps-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  margin: 30px auto;
-}
-
-.maps-container iframe {
-  width: 600px;
-  height: 450px;
-  border: none;
-  border-radius: 10px;
-}
-
-input:focus,
-select:focus,
-textarea:focus {
-  outline: none;
-  box-shadow: 0 0 0 3px rgba(230, 40, 106, 0.2);
-}
-
-#alamat {
-  margin-top: 40px;
-  border: none !important;
-  box-shadow: none !important;
-  outline: none !important;
-}
-
+/* Animasi Judul Donuties (Muncul Sekali, Berkilau Terus) */
 @keyframes munculSekali {
   0% {
     opacity: 0;
@@ -221,4 +61,184 @@ header h1 {
   animation:
     munculSekali 1.4s ease-out 1 forwards,
     kilauTerus 2.4s ease-in-out 1.4s infinite;
+}
+
+nav {
+  margin-top: 16px;
+}
+
+nav a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: 600;
+  margin: 0 10px;
+  transition: opacity 0.2s;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  opacity: 0.85;
+}
+
+/* 3. Isi halaman */
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+section {
+  background-color: #f8d8dd;
+  border-radius: 12px;
+  padding: 24px;
+  margin: 24px 0;
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+/* Garis bawah judul H2 */
+#tentang h2,
+#produk h2,
+#Video h2,
+#kontak h2,
+#Maps h2 {
+  color: #e6286a;
+  border-bottom: 3px solid #e6286a;
+  padding-bottom: 8px;
+  display: block;
+  width: 100%;
+  margin-top: 0;
+}
+
+/* Gambar Responsif */
+.gambar {
+  text-align: center;
+  margin: 16px 0;
+}
+
+.gambar img,
+img {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* 4. Tabel */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 24px;
+}
+
+th, td {
+  border: 1px solid #e6286a;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #e76a7f;
+  color: #ffffff;
+}
+
+/* 5. Video Youtube Responsif */
+.video-youtube {
+  display: flex;
+  justify-content: center;
+  margin: 16px 0;
+}
+
+.video-youtube iframe {
+  width: 100%;
+  max-width: 720px;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  border: none;
+  border-radius: 12px;
+}
+
+/* 6. Form & Tombol */
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #e6286a;
+  border-radius: 6px;
+  font-family: inherit;
+  margin-top: 4px;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #861943;
+}
+
+button {
+  background-color: #e6286a;
+  color: #f8d8dd;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 24px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+button:hover, .tombol-wa:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+.tombol-wa {
+  display: inline-block;
+  background-color: #e6286a;
+  color: #f8d8dd;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 30px;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+/* 7. Maps Container Responsif */
+.maps-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.maps-container iframe {
+  width: 100%;
+  max-width: 600px;
+  aspect-ratio: 4 / 3;
+  height: auto;
+  border: none;
+  border-radius: 10px;
+}
+
+/* 8. Footer */
+footer {
+  background-color: #e6286a;
+  color: #f8d8dd;
+  text-align: center;
+  padding: 16px;
+}
+
+/* Adjustments khusus HP */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 30px;
+  }
+  
+  nav a {
+    display: inline-block;
+    margin: 4px 6px;
+  }
+  
+  section {
+    padding: 16px;
+  }
 }
