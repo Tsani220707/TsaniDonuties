@@ -96,9 +96,10 @@ h2 {
 #tentang h2,
 #produk h2,
 #channel h2,
-#video h2,
+#Video h2,
 #kontak h2,
-#maps h2 {
+#maps h2,
+#Maps h2 {
   border-bottom: 3px solid #e6286a;
   padding-bottom: 8px;
   display: block;
